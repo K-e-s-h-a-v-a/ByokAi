@@ -12,7 +12,7 @@ const navLinks = [
   { href: '/pricing', label: 'Pricing' },
 ]
 
-const Navbar = () => {  
+const Navbar = () => {
   return (
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
@@ -25,12 +25,12 @@ const Navbar = () => {
           {/* Logo Section */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <div className={` -ml-20`}>
+              <div className={` -ml-20 overflow-y-hidden`}>
                 <Image
-                  src={`'/logo.svg'`} // Replace with your logo path
+                  src='/white-logo.png' // Replace with your logo path
                   alt="KeyBridge Logo"
-                  width={`350`}
-                  height={`500`}
+                  width={`250`}
+                  height={`3`}
                 />
               </div>
             </Link>

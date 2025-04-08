@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/myui/Navbar"
-
+import { Toaster } from "@/components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,14 +29,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
 
-          {/* Fixed Navbar to Ensure Accessibility */}
-          <div className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-md z-[100]">
-            <Navbar />
-          </div>
+        {/* Fixed Navbar to Ensure Accessibility */}
+        <div className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 shadow-md ">
+          <Navbar />
+        </div>
 
-          {/* Push content down so it's not covered by the fixed navbar */}
-          <div className="pt-16">{children}</div>
-       
+        {/* Push content down so it's not covered by the fixed navbar */}
+        <div className="pt-16 z-[120]">{children}</div>
+        <Toaster position="top-center" />
       </body>
     </html>
   );

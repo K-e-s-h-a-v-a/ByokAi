@@ -26,9 +26,15 @@ const Signup = () => {
       >
         <h1 className="text-4xl font-bold mb-7">Sign Up</h1>
 
-        {/* Email & Password Fields */}
-        <Input type="email" placeholder="Email" className="mt-4" />
-        <Input type="password" placeholder="Password" className="mt-4" />
+        <div className="space-y-4">
+          <Input type="email" placeholder="Email" className="w-full" />
+          <div className="flex space-x-2">
+            <Input type="text" placeholder="First name" className="w-1/2" />
+            <Input type="text" placeholder="Last name" className="w-1/2" />
+          </div>
+          <Input type="text" placeholder="Mobile" className="w-full" />
+          <Input type="password" placeholder="Password" className="w-full" />
+        </div>
 
         <Button className="bg-blue-700 mt-7 w-[200px] cursor-pointer" variant="link">Sign Up</Button>
 
@@ -50,11 +56,11 @@ const Signup = () => {
           <span className="text-gray-700 dark:text-white font-medium">Sign in with Google</span>
         </Button>
         <p className="mt-4">
-                  Already have an account?{" "}
-                  <Link href="/login" className="text-blue-600 underline">
-                    Log in
-                  </Link>
-                </p>
+          Already have an account?{" "}
+          <Link href="/login" className="text-blue-600 underline">
+            Log in
+          </Link>
+        </p>
       </motion.div>
     </div>
   );

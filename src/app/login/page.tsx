@@ -33,7 +33,7 @@ const Login = () => {
         <Input type="password" placeholder="Password" className="mt-4" />
         
         {/* Login Button */}
-        <Button className="mt-6 w-full bg-blue-600 text-white hover:bg-blue-700">
+        <Button className="mt-6 w-full bg-blue-600 text-white hover:bg-blue-700 cursor-pointer">
           Login
         </Button>
         
@@ -41,8 +41,8 @@ const Login = () => {
         <div className="border-t border-gray-300 dark:border-gray-600 mt-6" />
 
         {/* Google Sign-In Button */}
-        <Button variant="outline" className="mt-4 w-full flex items-center justify-center gap-2">
-          <Image src="/google-logo.svg" alt="Google" width={20} height={20} />
+        <Button variant="outline" className="mt-4 w-full flex items-center justify-center gap-2 cursor-pointer">
+          <Image src="/g.png" alt="Google" width={20} height={20} />
           Sign in with Google
         </Button>
 

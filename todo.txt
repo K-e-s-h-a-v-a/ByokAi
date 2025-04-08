@@ -1,0 +1,31 @@
+Login Page - *
+
+Signup Page ✅ (Already done) - *
+
+Forgot Password Page - *
+
+🔹 Main App Pages
+Home Page ✅ (Already done) - *
+
+Get Started Page ✅ (Already done) - *
+
+Dashboard (Main user interface after login) - .
+
+Profile Page (User settings & preferences) - .
+
+API Key Management Page (For adding/managing API keys) - .
+
+Templates Library Page (List of AI-powered templates) - .
+
+Analytics Page (Token usage, model performance, etc.) - .
+
+Team Workspaces Page (If collaboration is included) - .
+
+🔹 Support & Extras
+Pricing Page - .
+
+FAQ Page - .
+
+Contact Us Page - .
+
+Terms & Privacy Policy Page - .
